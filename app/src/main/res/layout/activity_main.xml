@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <WebView android:id="@+id/webView" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:id="@+id/setupPanel" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal" android:padding="28dp" android:background="#F4F7FB" android:visibility="gone">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Alpha Chama Member" android:textStyle="bold" android:textSize="28sp" android:textColor="#123B6D" android:gravity="center" android:layout_marginTop="54dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Connect this app to your Chama server" android:textSize="16sp" android:textColor="#4D5B6A" android:gravity="center" android:layout_marginTop="12dp" android:layout_marginBottom="28dp" />
+        <EditText android:id="@+id/serverUrl" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="https://chama.example.co.ke/" android:inputType="textUri" android:singleLine="true" android:padding="14dp" android:background="#FFFFFF" />
+        <Button android:id="@+id/connectButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Connect" android:layout_marginTop="18dp" android:minHeight="50dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="For a local XAMPP server, use the computer LAN address, e.g. http://192.168.1.20/Alpha_Chama_System_Final_Installer/" android:textSize="13sp" android:textColor="#6B7280" android:layout_marginTop="18dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Developed by Alpha Smart Systems and Computer Solutions" android:textSize="12sp" android:textColor="#6B7280" android:gravity="center" android:layout_marginTop="32dp" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/errorPanel" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center" android:padding="28dp" android:background="#FFFFFF" android:visibility="gone">
+        <TextView android:id="@+id/errorText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Unable to connect to the Chama server." android:textSize="18sp" android:textColor="#263238" android:gravity="center" />
+        <Button android:id="@+id/retryButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Retry" android:layout_marginTop="18dp" />
+        <Button android:id="@+id/changeServerButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Change Server" android:layout_marginTop="10dp" />
+    </LinearLayout>
+</FrameLayout>
